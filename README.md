@@ -11,4 +11,5 @@ Simulador em Python da ULA de 1 bit da Mic-1.
 ## Grupo:
 
 Lucas Nóbrega Albuquerque
+
 Luiz Manoel Barbosa Ramalho
