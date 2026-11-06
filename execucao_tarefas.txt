@@ -1,0 +1,11 @@
+Executar tarefa 1:
+
+python etapa2.py tarefa1 programa_etapa2_tarefa1.txt saida_etapa2_tarefa1.txt
+
+Definir valores de A e B:
+
+python etapa2.py tarefa1 programa.txt saida.txt --A 5 --B 3
+
+Executar tarefa 2:
+
+python etapa2.py tarefa2 programa_etapa2_tarefa2.txt registradores_etapa2_tarefa2.txt saida_etapa2_tarefa2.txt
