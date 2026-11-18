@@ -146,7 +146,7 @@ def ler_registradores(caminho):
     return regs
 
 
-def decodificador_b(codigo):
+def decodificador_b(codigo): # recebe um número (o código de 4 bits do campo B da microinstrução) e devolve o nome do registrador que vai alimentar a ULA
     # decodificador de 4 bits: habilita um de 9 registradores no barramento B.
     if codigo not in DECODIFICADOR_B:
         raise ValueError(f"codigo {codigo:04b} nao habilita nenhum registrador no barramento B")

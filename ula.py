@@ -6,11 +6,6 @@ Grupo: Lucas Nóbrega Albuquerque e Luiz Manoel Barbosa Ramalho
 
 Segunda Avaliacao - Etapa 1
 
-Cada linha do arquivo de programa contem uma palavra de 6 bits:
-
-F0 F1 ENA ENB INVA INC
-X0 X1 X2  X3  X4   X5
-
 Uso:
     python3 ula.py [programa.txt] [saida.txt] [--A 1] [--B 1]
 """
@@ -39,8 +34,7 @@ def NOT(x):
 # ULA de 1 bit
 
 def ula(a, b, f0, f1, ena, enb, inva, inc):
-    """retorna (S, vai_um) para as entradas.
-
+    """
     - entrada A: passa por AND com ENA e depois XOR com INVA.
     - entrada B: passa por AND com ENB.
     - decodificador (F0, F1) habilita uma das linhas da unidade logica ou o somador completo:

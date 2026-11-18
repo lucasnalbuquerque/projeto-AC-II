@@ -5,11 +5,6 @@ Segunda Avaliacao - Projeto Mic-1 - Etapa 3
 microinstrucoes de 23 bits (ULA 8 | barramento C 9 | memoria 2 | barramento B 4), com os bits de memoria WRITE e READ.
 
 le instrucoes da IJVM (ILOAD x, DUP, BIPUSH byte), traduz cada uma em microinstrucoes e executa na Mic-1.
-
-Uso:
-    python3 etapa3.py
-    python3 etapa3.py --modo ijvm   [instrucoes] [registradores] [dados] [saida]
-    python3 etapa3.py --modo tarefa1 [microinstrucoes] [registradores] [dados] [saida]
 """
 
 import argparse
@@ -19,9 +14,9 @@ import etapa2
 from etapa2 import (DECODIFICADOR_B, LARGURA, MASCARA, ORDEM_LOG, SELETOR_C, executar_instrucao, fmt, ler_palavras, ler_registradores)
 
 # Palavras de controle da ULA (SLL8 SRA1 F0 F1 ENA ENB INVA INC)
-ULA_B = "00110100" # Sd = B     (ENA=0: A fica zerado, soma passa B)
+ULA_B = "00110100" # Sd = B (ENA=0: A fica zerado, soma passa B)
 ULA_B_MAIS_1 = "00110101" # Sd = B + 1
-ULA_A = "00111000" # Sd = A     (ENB=0: B fica zerado)
+ULA_A = "00111000" # Sd = A (ENB=0: B fica zerado)
 ULA_A_MAIS_1 = "00111001" # Sd = A + 1
 
 BIT_DE_REGISTRADOR_B = {nome: codigo for codigo, nome in DECODIFICADOR_B.items()}
