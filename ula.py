@@ -44,10 +44,6 @@ def ula(a, b, f0, f1, ena, enb, inva, inc):
     - entrada A: passa por AND com ENA e depois XOR com INVA.
     - entrada B: passa por AND com ENB.
     - decodificador (F0, F1) habilita uma das linhas da unidade logica ou o somador completo:
-        00 -> A AND B
-        01 -> A OR B
-        10 -> NOT B
-        11 -> A + B (somador completo)
     - o sinal INC e o 'vem-um' do somador completo.
     - a saida S e o OR das quatro linhas (apenas uma ta habilitada).
     """
